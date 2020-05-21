@@ -23,8 +23,12 @@ while tmp:
     count += 1
 
 nn_div = 10 ** count + 1
+#вариант 1
 nnn_div = (10 ** (count * 2)) + (10 ** count + 1)
+# вариант 2
+nnn_div_v2 = (10 ** (count * 2)) + nn_div
 
+#вариант 1
 result = user_num + (user_num * nn_div) + (user_num * nnn_div)
 
 print(result)
